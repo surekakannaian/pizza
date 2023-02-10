@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header{
+    background-color: #f6f6f6;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #252222;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+ 
+.view{
+    position: absolute;
+    top: 0;
+    width: 500px;
+}
+ 
+  .topnav .icon {
+    display: none;
+  }
+  a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+#home {
+    position: relative;
+    height: 400px;
+}
+#home h1{
+    position: absolute;
+    color: #ffffff;
+    top: 45%;
+    left: 35%;
+    display: block;
+   font-size: 40px;
+}
+.arrow{
+    display: flex;
+   
+}
+.prev{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    background-color: brown;
+    padding: 1%;
+    color: #ffffff;
+}
+.next{
+    display: block;
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    background-color: brown;
+    padding: 1%;
+    color: #ffffff;
+}
+#menu .card i{
+position: absolute;
+display: block;
+left: 45%;
+top: 45%;
+transform: translate(-50% -50%);
+color: #131111;
+padding: 3%;
+border-radius: 50%;
+background-color: aliceblue;
+}
+#menu .card img{
+    border-radius: 5px;
+}
+#menu .card:hover img{
+    transform: scale(0.9);
+}
+#menu .card:hover i{
+    background-color: yellow;
+    transform: scale(1.2);
+}
+#banner{
+    background: url("images/bg-4.png") no-repeat;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    margin-top: 4%;
+}
+#banner::before{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(123,123,123)
+}
+form{
+    border: 1px solid gray;
+    padding: 2%;
+    border-radius: 4px;
+}
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .logo{
+        display: none;
+      }
+  
+  
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+ 
+}
